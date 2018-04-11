@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title></title>
+
+    <script>
+    function showContent(){
+        window.WebViewJavascriptBridge.callHandler(
+            'oneweb',
+            {'info': 'webview接收信息成功'},
+            function(responseData) {
+                document.getElementById("show").innerHTML = responseData;
+            }
+        )
+    }
+    function showContent(){
+        window.WebViewJavascriptBridge.callHandler(
+            'twoweb',
+            {'info': 'webview接收信息成功'},
+            function(responseData) {
+                document.getElementById("show").innerHTML = responseData;
+            }
+        )
+    }
+
+    </script>
+</head>
+<body>
+<p>
+<div id="show" style="word-break:break-all"></div>
+</p>
+<div align="center">
+    <p>
+        <input type="button" id="enter" value="获取用户信息" onclick="showContent();"/>
+    </p>
+</div>
+</body>
+
+</html>

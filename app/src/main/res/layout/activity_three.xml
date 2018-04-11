@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.faqrobot.textchat.three.ThreeActivity">
+
+    <org.faqrobot.textchat.three.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:right_button_drawable="@mipmap/ic_launcher"
+        app:title_background_color="@color/green"
+        app:title_text="标题1" />
+</LinearLayout>
