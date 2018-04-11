@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import org.faqrobot.textchat.five.FiveActivity;
 import org.faqrobot.textchat.four.FourActivity;
 import org.faqrobot.textchat.one.OneActivity;
 import org.faqrobot.textchat.three.ThreeActivity;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Class<?> classes[] =
             {
-                    OneActivity.class, TwoActivity.class, ThreeActivity.class, FourActivity.class
+                    OneActivity.class, TwoActivity.class, ThreeActivity.class, FourActivity.class,FiveActivity.class
             };
 
     @Override
@@ -54,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button4:
                 changeAct(classes[3]);
+                break;
+            case R.id.button5:
+                changeAct(classes[4]);
                 break;
             default:
                 break;

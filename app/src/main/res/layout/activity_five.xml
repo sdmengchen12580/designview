@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+    <org.faqrobot.textchat.five.RippleIntroView
+        android:id="@+id/layout_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        android:background="#AA000000">
+        <ImageView
+            android:id="@+id/iv_plus"
+            android:layout_marginTop="36dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/tv_title"
+            android:layout_below="@id/iv_plus"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </org.faqrobot.textchat.five.RippleIntroView>
+</FrameLayout>

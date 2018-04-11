@@ -74,17 +74,23 @@ public class DynamicWave extends View {
         for (int i = 0; i < mTotalWidth; i++) {
             // 减400只是为了控制波纹绘制的y的在屏幕的位置，大家可以改成一个变量，然后动态改变这个变量，从而形成波纹上升下降效果
             // 绘制第一条水波纹
-            canvas.drawLine(i, mTotalHeight - mResetOneYPositions[i] -  Math.round(mTotalHeight*0.05), i,
+            canvas.drawLine(i,
+                    mTotalHeight - mResetOneYPositions[i] -  Math.round(mTotalHeight*0.05),
+                    i,
                     mTotalHeight,
                     mWavePaint);
 
             // 绘制第二条水波纹
-            canvas.drawLine(i, mTotalHeight - mResetTwoYPositions[i] -  Math.round(mTotalHeight*0.05), i,
+            canvas.drawLine(i,
+                    mTotalHeight - mResetTwoYPositions[i] -  Math.round(mTotalHeight*0.05),
+                    i,
                     mTotalHeight,
                     mWavePaint);
 
             // 绘制第二条水波纹
-            canvas.drawLine(i, mTotalHeight - mResetThreeYPositions[i] -  Math.round(mTotalHeight*0.05), i,
+            canvas.drawLine(i,
+                    mTotalHeight - mResetThreeYPositions[i] -  Math.round(mTotalHeight*0.05),
+                    i,
                     mTotalHeight,
                     mWavePaint);
         }
